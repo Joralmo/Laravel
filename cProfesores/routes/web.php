@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix'=>'admin'], function(){
+	Route::resource('profesores','ProfesoresController');
+	/*Route::get('users/{id}/destroy', [
+		'uses'=>'UsersController@destroy',
+		'as'=>'admin.users.destroy'
+	]);*/
+});
