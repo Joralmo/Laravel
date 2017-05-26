@@ -1,0 +1,11 @@
+body{
+	/*background-image: url("../imagenes/bg.jpg");
+	background-size: cover;*/
+	background: #ccc;
+}
+#imgNav{
+	height: 40px;
+	width: 40px;
+	margin-top: -10px;
+	border-radius: 15%;
+}
