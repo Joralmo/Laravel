@@ -15,6 +15,6 @@ class Materia extends Model
     	return $this->belongsTo('App\Carrera');
     }
     public function profesor(){
-    	return $this->belongsTo('App\Profesor');
+    	return $this->belongsToMany('App\Profesor');
     }
 }

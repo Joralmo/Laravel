@@ -22,3 +22,19 @@ Route::group(['prefix'=>'admin'], function(){
 		'as'=>'admin.users.destroy'
 	]);*/
 });
+
+Route::group(['prefix'=>'filtro'], function(){
+	Route::get('materia/{string}','ProfesoresController@materia');
+	/*Route::get('users/{id}/destroy', [
+		'uses'=>'UsersController@destroy',
+		'as'=>'admin.users.destroy'
+	]);*/
+});
+
+Route::group(['prefix'=>'filtro'], function(){
+	Route::get('facultad/{string}','ProfesoresController@facultad');
+	/*Route::get('users/{id}/destroy', [
+		'uses'=>'UsersController@destroy',
+		'as'=>'admin.users.destroy'
+	]);*/
+});
